@@ -38,6 +38,7 @@ class App extends Component {
           <button>Search the song!</button>
         </form>
         <p>{this.state.lyric}</p>
+        <p>REQUISITI: installare il <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi"> plugin per chrome </a> 
       </div>
     );
   }
