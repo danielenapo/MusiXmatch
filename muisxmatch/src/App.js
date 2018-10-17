@@ -37,7 +37,15 @@ class App extends Component {
           <p className="input">Artist: <input value={this.state.artist} onChange={this.onChangeArtist} /></p>
           <button>Search the song!</button>
         </form>
+
         <p className="testoh">{this.state.lyric}</p>
+
+        <p>REQUISITI: installare i seguenti plugin per abilitare il CORS</p>
+        <ul>
+          <li> <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi"> chrome </a> </li>
+          <li> <a href="https://addons.mozilla.org/it/firefox/addon/cors-everywhere/">firefox</a></li>
+          <li> <a href="https://stackoverflow.com/questions/4556429/disabling-same-origin-policy-in-safari">safari</a></li>
+      </ul>
       </div>
     );
   }
