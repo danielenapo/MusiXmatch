@@ -30,15 +30,14 @@ class App extends Component {
 
   render() {
     return (
-      
+
       <div className="App">
         <form onSubmit={this.handleSubmit}>
-          <input value={this.state.song} onChange={this.onChangeSong} />
-          <input value={this.state.artist} onChange={this.onChangeArtist} />
+          <p className="input">Song: <input value={this.state.song} onChange={this.onChangeSong} /></p>
+          <p className="input">Artist: <input value={this.state.artist} onChange={this.onChangeArtist} /></p>
           <button>Search the song!</button>
         </form>
-        <p>{this.state.lyric}</p>
-        <p>REQUISITI: installare il <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi"> plugin per chrome </a> 
+        <p className="testoh">{this.state.lyric}</p>
       </div>
     );
   }
