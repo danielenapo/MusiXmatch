@@ -6,11 +6,13 @@ class App extends Component {
     super(props);
     this.state = {
       song: '',
+      currentSong: '',
       artist: '',
+      currentArtist: '',
       lyric: ''
     };
   }
-
+  
   onChangeSong = (event) => {
     this.setState({ song: event.target.value });
   }
@@ -24,6 +26,7 @@ class App extends Component {
     const url = `https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?q_track=${this.state.song}&q_artist=${this.state.artist}&apikey=${api_key}`;
     fetch(url)
       .then(response => response.json())
+      .then(this.setState({currentSong: this.state.song, currentArtist: this.state.artist}))
       .then(data => this.setState({ song:'', artist: '', lyric: data.message.body.lyrics.lyrics_body}))
       .catch(e => console.log('error', e));
   }
@@ -32,12 +35,15 @@ class App extends Component {
     return (
 
       <div className="App">
+        <h1>Music Lyric Finder</h1>
+        <h3>Using MusixMatch APIs</h3>
         <form onSubmit={this.handleSubmit}>
           <p className="input">Song: <input value={this.state.song} onChange={this.onChangeSong} /></p>
           <p className="input">Artist: <input value={this.state.artist} onChange={this.onChangeArtist} /></p>
           <button>Search the song!</button>
         </form>
-
+        <p>Song: {this.state.currentSong}</p>
+        <p>Artist: {this.state.currentArtist}</p>
         <p className="testoh">{this.state.lyric}</p>
 
         <p>REQUISITI: installare i seguenti plugin per abilitare il CORS</p>
