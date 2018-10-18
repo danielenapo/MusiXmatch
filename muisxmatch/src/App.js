@@ -42,11 +42,11 @@ class App extends Component {
           <p className="input">Artist: <input value={this.state.artist} onChange={this.onChangeArtist} /></p>
           <button>Search the song!</button>
         </form>
-        <p>Song: {this.state.currentSong}</p>
-        <p>Artist: {this.state.currentArtist}</p>
+        <p>Song: <b>{this.state.currentSong.toUpperCase()}</b></p>
+        <p>Artist: <b>{this.state.currentArtist.toUpperCase()}</b></p>
         <p className="testoh">{this.state.lyric}</p>
 
-        <p>REQUISITI: installare i seguenti plugin per abilitare il CORS</p>
+        <p><i>REQUISITI: installare i seguenti plugin per abilitare il CORS</i></p>
         <ul>
           <li> <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi"> chrome </a> </li>
           <li> <a href="https://addons.mozilla.org/it/firefox/addon/cors-everywhere/">firefox</a></li>
