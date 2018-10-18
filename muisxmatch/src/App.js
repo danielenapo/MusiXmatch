@@ -45,7 +45,7 @@ class App extends Component {
         <p>Song: <b>{this.state.currentSong.toUpperCase()}</b></p>
         <p>Artist: <b>{this.state.currentArtist.toUpperCase()}</b></p>
         <p className="testoh">{this.state.lyric}</p>
-
+        <p>prova</p>
         <p><i>REQUISITI: installare i seguenti plugin per abilitare il CORS</i></p>
         <ul>
           <li> <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi"> chrome </a> </li>
