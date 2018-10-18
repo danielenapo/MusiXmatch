@@ -36,7 +36,7 @@ class App extends Component {
 
       <div className="App">
         <h1>Music Lyric Finder</h1>
-        <h3>Using MusixMatch APIs</h3>
+        <h3>Using React and MusixMatch APIs</h3>
         <form onSubmit={this.handleSubmit}>
           <p className="input">Song: <input value={this.state.song} onChange={this.onChangeSong} /></p>
           <p className="input">Artist: <input value={this.state.artist} onChange={this.onChangeArtist} /></p>
