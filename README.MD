@@ -4,6 +4,8 @@ using api musiXmatch to show lyrics results of the songs researched
 ## Home
 ![alt text](https://github.com/danielenapo/MusiXmatch/blob/master/Home.jpg)
 
-##Research
+## Research
+![alt text](https://github.com/danielenapo/MusiXmatch/blob/master/Ricerca.jpg)
 
-##Result
+## Result
+![alt text](https://github.com/danielenapo/MusiXmatch/blob/master/Risultato.jpg)
