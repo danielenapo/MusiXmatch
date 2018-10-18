@@ -1,4 +1,4 @@
-Project React Js,
+Project React Js, By Betuzzi Gabriele, Caraffi Alex, Napolitano Daniele, Perna Mario, Serafino Niccolò
 using api musiXmatch to show lyrics results of the songs researched
 # DOCUMENTATION
 ## Home
